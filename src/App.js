@@ -1,26 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import ReactMarkdown from 'react-markdown';
+import UserInput from './UserInput';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <ReactMarkdown source={"Lorem ipsum sit **amid donor**"} className="markdown-container"/>
+      <UserInput />
     </div>
-  );
+  )
 }
 
 export default App;
