@@ -1,8 +1,8 @@
 {
+  "homepage": "https://nkwatra.github.io/Markdown-Editor",
   "name": "markdown",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://nkwatra.github.io/markdown-editor",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",

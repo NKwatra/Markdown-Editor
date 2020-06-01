@@ -1,6 +1,6 @@
 A simple React markdown editor. 
 
-[Live Demo](http://nkwatra.github.io/markdown-editor)
+[Live Demo](https://nkwatra.github.io/Markdown-Editor)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
