@@ -70,13 +70,13 @@ function UserInput(props) {
                 Bold, Italic : components for bold and italic button
                 send-button : to send markdown text
             */}
-            <textarea className="text-input" rows={4} value={text} onChange={event => setText(event.target.value)} placeholder="Please enter text here" autoFocus ref={textInputRef}/>
+            <textarea className="text-input" rows={4} value={text} onChange={event => setText(event.target.value)} placeholder="Please enter text here" autoFocus ref={textInputRef} data-testid="user-input" />
             <div className="divider"/>
             <div>
-                <div className="option" onClick={() => handleOptionChange("bold")}>
+                <div className="option" onClick={() => handleOptionChange("bold")} data-testid="bold-option">
                     <Bold fill={boldOptionColor}/>
                 </div>
-                <div className="option" onClick={() => handleOptionChange("italic")}>
+                <div className="option" onClick={() => handleOptionChange("italic")} data-testid="italic-option">
                     <Italic fill={italicOptionColor} />
                 </div>
                 <button className="send-button" onClick={() => {
@@ -90,7 +90,8 @@ function UserInput(props) {
                     {
                         markdownText += "**";
                         handleOptionChange("bold");
-                    }else if(options["italic"])
+                    }
+                    if(options["italic"])
                     {
                         markdownText += "*";
                         handleOptionChange("italic")
